@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse to Duck Power</title>
+</head>
+
+<form>
+    <input name="horse" placeholder="Horse power" type="number" min="0" value="0">
+    <button name="submit" placeholder="" type="button" onclick="document.getElementsByName('duck')[0].value = Number(document.getElementsByName('horse')[0].value)*200;var duck='';for(i=0;i<Number(document.getElementsByName('horse')[0].value)*200;i++) {
+            // duck = duck + `<!--<img src='iu.jpg' width='20'>-->`
+
+            document.getElementById('duckDiv').innerHTML = duck
+        }">Convert
+        to Duck</button>
+    <input name="duck" placeholder="Duck power" type="number" min="0" value="0"><br>
+    <!--<h2>About this many ducks:</h2><br>-->
+    <div id="duckDiv">
+
+    </div>
+</form>
+
+</html>
